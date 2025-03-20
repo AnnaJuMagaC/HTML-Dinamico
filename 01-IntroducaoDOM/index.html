@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01 | Introdução Dom</title>
+</head>
+<body style="background-color: rgb(72, 188, 192); text-align: center;">
+   <h1>Introdução ao Dom</h1>
+   <p id="meuTexto">Texto orginal.</p>
+   <button onclick="mudarTexto()">Trocar Texto</button>
+   <button onclick="adicionarTexto()">Adicionar Texto</button>
+   <button onclick="limparTexto()">Limpar Texto</button>
+
+
+   <script>
+
+    const mudarTexto = () => {
+        document.getElementById("meuTexto").innerHTML = "Texto alterado!";
+    };
+    const adicionarTexto = () => {
+        document.getElementById("meuTexto").innerHTML += " | Texto adicionado!";
+    };
+    const limparTexto = () => {
+        document.getElementById("meuTexto").innerHTML = "";
+    };
+
+   </script>
+
+</body>
+</html>
