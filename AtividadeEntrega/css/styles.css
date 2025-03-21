@@ -145,3 +145,7 @@ footer {
     text-align: center;
     padding: 5px 0px;
 }
+
+#mensagem-erro{
+    display: none;
+}
